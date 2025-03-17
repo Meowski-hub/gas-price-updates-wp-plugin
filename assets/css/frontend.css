@@ -1,0 +1,69 @@
+.gpu-prices-container {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+.gpu-prices-container h2 {
+    color: #333;
+    margin-bottom: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.gpu-prices-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gpu-prices-table th,
+.gpu-prices-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.gpu-prices-table th {
+    background-color: #6c63ff;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+.gpu-prices-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.gpu-prices-table td:nth-child(2) {
+    font-weight: 600;
+    color: #2c5282;
+}
+
+.gpu-prices-table tr:last-child td {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 768px) {
+    .gpu-prices-container {
+        padding: 0 0.5em;
+    }
+    
+    .gpu-prices-table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .gpu-prices-table table {
+        min-width: 600px;
+    }
+    
+    .gpu-prices-container h2 {
+        font-size: 1.5em;
+    }
+}
