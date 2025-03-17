@@ -1,0 +1,111 @@
+.gpu-admin-container {
+    margin: 2em 0;
+}
+
+.gpu-upload-section {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.gpu-upload-section h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.gpu-upload-section form {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gpu-upload-section input[type="file"] {
+    flex: 1;
+    min-width: 200px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.gpu-preview-section {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.gpu-preview-section h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.gpu-shortcode-info {
+    margin-top: 2em;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.gpu-shortcode-info h3 {
+    color: #333;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.gpu-shortcode-info code {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+/* WordPress admin table overrides */
+.gpu-preview-section .wp-list-table {
+    border: none;
+    box-shadow: none;
+}
+
+.gpu-preview-section .wp-list-table th {
+    background: #6c63ff;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+.gpu-preview-section .wp-list-table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .gpu-upload-section form {
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .gpu-upload-section input[type="file"] {
+        width: 100%;
+    }
+    
+    .gpu-upload-section .button {
+        width: 100%;
+        text-align: center;
+    }
+}
